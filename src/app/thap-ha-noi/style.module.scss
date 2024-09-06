@@ -1,0 +1,171 @@
+.main {
+    width: 70vw;
+    overflow-x: auto;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vw;
+
+    .cta {
+        label {
+            margin-top: 1.5vw;
+            font-size: 2vw;
+            padding-bottom: 2vw;
+            padding-top: 2vw;
+        }
+
+        input {
+            height: 2vw;
+            width: 15vw;
+            border-radius: 2vw;
+            text-align: center;
+            font-size: 2vw;
+            padding-bottom: 0.5vw;
+
+            &::placeholder {
+                font-size: 1vw;
+                text-align: center; 
+            }
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        button {
+            width: 5vw;
+            height: 5vw;
+            object-fit: cover;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            transition: transform 0.2s linear;
+            cursor: pointer;
+
+            img {
+                height: 2vw;
+                width: 2vw;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &:active {
+                transform: scale(0.9);
+                opacity: 0.8
+            }
+        }
+
+        .auto {
+            margin-top: 1vw;
+        }
+
+        width: 100%;
+        // background-color: blue;
+        height: 20%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+
+    .game {
+        width: 100%;
+        display: flex;
+        gap: 20vw;
+        justify-content: center;
+        border-bottom: 2vw solid #4f4f4f;
+
+        .tower {
+            width: 2vw;
+            height: 20vw;
+            background-color: #4f4f4f;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.5s linear;
+
+            &:active {
+                background-color: #8F8F8F;
+            }
+        }
+
+        .layer {
+            padding: 1vw;
+            height: 2.5vw;
+            position: absolute;
+            border-radius: 2vw;
+            cursor: pointer;
+            transition: transform 1s linear;
+            transform: translateX(-50%);
+            left: 50%;
+            translate: transform 0.1s linear;
+            animation: fadeIn 0.2s ease-out;
+
+            &:hover {
+                border: 0.1vw solid black;
+            }
+
+            &:active {
+                transform: scale(1); 
+            }
+
+            @keyframes fadeIn {
+                from {
+                  opacity: 0.7;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+        }
+
+        .layer0 {
+            width: 18vw;
+            // bottom: 0;
+            background-color: red;
+        }
+
+        .layer1 {
+            width: 16vw;
+            // bottom: 2.5vw;
+            background-color: blue;
+        }
+
+        .layer2 {
+            width: 14vw;
+            // bottom: 5vw;
+            background-color: yellowgreen;
+        }
+
+        .layer3 {
+            width: 12vw;
+            // bottom: 7.5vw;
+            background-color: pink;
+        }
+
+        .layer4 {
+            width: 10vw;
+            // bottom: 7.5vw;
+            background-color: plum;
+        }
+
+        .layer5 {
+            width: 8vw;
+            // bottom: 7.5vw;
+            background-color: orange;
+        }
+
+        .layer6 {
+            width: 6vw;
+            // bottom: 7.5vw;
+            background-color: aqua;
+        }
+    }
+}

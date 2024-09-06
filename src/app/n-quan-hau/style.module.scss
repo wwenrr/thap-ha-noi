@@ -1,0 +1,44 @@
+.main {
+    margin-top: 30vh;
+    height: 100vh;
+    // background-color: red;
+    width: 70%;
+    margin-left: auto;
+
+    .form {
+        display: flex;
+        height: 5vw;
+        width: 15vw;
+        margin: auto;
+        flex-direction: column;
+
+        label {
+            font-size: 1vw;
+        }
+
+        .button {
+            cursor: pointer;
+        }
+
+        button {
+            background-color: white;
+            margin-top: 1vw;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .animate {
+        animation: load 2s infinite linear;
+
+        @keyframes load {
+            from {
+                transform: rotate(0);
+            }
+    
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
