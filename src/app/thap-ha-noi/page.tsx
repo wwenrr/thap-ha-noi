@@ -13,7 +13,7 @@ let [ring, tower]: [string, string] = ['', '']
 let arr: any = [];
 let setArr: any = []
 
-const page = () => {
+const Page = () => {
     const [clicked, setClicked] = useState(false);
     const [size, setSize] = useState<number | string>('');
 
@@ -243,4 +243,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
