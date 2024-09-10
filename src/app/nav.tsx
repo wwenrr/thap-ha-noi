@@ -10,7 +10,7 @@ const Nav = () => {
       </div>
 
       <div className={`${style.button} ${style.n_quan_hau}`}>
-        <Link href="/n-quan-hau"> N Quân Hậu</Link>
+        <a href="/n-quan-hau"> N Quân Hậu</a>
       </div>
     </nav>
   );
